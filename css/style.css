@@ -9,13 +9,8 @@ html, body {
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
-
     grid-template-areas: 
-    "header   header  header  header" 
-    "primary   primary  primary  primary" 
-    "footer   footer  footer  footer";
-    height: 100vh;
+    "header   header  header  header";
     
 }
 
@@ -62,6 +57,7 @@ footer{
     padding: 2%;
     background-color: #41415b;
     color: white;
+
 }
 .tlf{
     grid-area: tlf;

@@ -1,11 +1,12 @@
-
+   /*
   .all-sections{
     width: 90%;
     margin: auto;
+    margin-right: -50%;
     margin-top: 60px;
     margin-bottom: 60px; 
     display: grid;
-    gap: 0px;
+    gap: 20px;
     grid-template-areas: 
     "table1 table2 table3"
     "table4 table5 table6"
@@ -24,3 +25,43 @@
         "table5"
         "table6";
     }
+  }
+
+  @media  (min-width:501px) and (max-width: 800px){
+    .all-sections {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "table1 table2"
+        "table3 table4"
+        "table5 table6";
+    }
+    
+  }
+
+  .section-table table{
+    width: 200px;
+    height: 150px;
+    text-align: center;
+
+  } */
+
+  .all-sections{
+    background-color: brown;
+   display: grid;
+   gap: 10px;
+   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+   margin: 40px;
+  }
+
+.all-sections > .section-table{
+  background-color: aquamarine;
+  border: 2px solid yellow;
+  height: 200px;
+}
+
+table{
+  width: 180px;
+  height: 190px;
+  text-align: center;
+  margin: auto;
+}
