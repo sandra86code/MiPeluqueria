@@ -59,7 +59,8 @@ footer{
     "copyright copyright copyright copyright copyright";
     grid-area: footer;
     padding: 2%;
-    background-color: #5a4c59;
+    background-color: #41415b;
+    color: white;
 }
 .tlf{
     grid-area: tlf;
