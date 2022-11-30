@@ -55,8 +55,9 @@ footer{
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-row: 1fr,1fr;
     grid-template-areas: 
-    "tlf tlf socialMedia1 socialMedia2 socialMedia3"
-    "copyright copyright copyright copyright copyright";
+    "socialMedia1 socialMedia2 socialMedia3"
+    "tlf tlf tlf"
+    "copyright copyright copyright";
     grid-area: footer;
     padding: 2%;
     background-color: #41415b;
