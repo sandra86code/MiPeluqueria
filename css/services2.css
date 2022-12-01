@@ -45,23 +45,3 @@
 
   } */
 
-  .all-sections{
-    background-color: brown;
-   display: grid;
-   gap: 10px;
-   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-   margin: 40px;
-  }
-
-.all-sections > .section-table{
-  background-color: aquamarine;
-  border: 2px solid yellow;
-  height: 200px;
-}
-
-table{
-  width: 180px;
-  height: 190px;
-  text-align: center;
-  margin: auto;
-}

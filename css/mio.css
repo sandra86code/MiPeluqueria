@@ -1,0 +1,99 @@
+
+
+ .all-sections{
+    background-color: brown;
+   display: grid;
+   grid-area: content;
+   gap: 10px;
+   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+   margin: 40px;
+  }
+
+.all-sections > .section-table{
+  background-color: aquamarine;
+  border: 2px solid yellow;
+  height: 200px;
+}
+
+table{
+  width: 180px;
+  height: 190px;
+  text-align: center;
+  margin: auto;
+}
+
+/* Begin footer */
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-rows: repeat(3, 50px);
+    grid-area: footer;
+    background-color: #41415b;
+    grid-template-areas:
+    "social-media social-media social-media"
+    "tlf tlf tlf"
+    "copyright copyright copyright";
+    padding: 2%;
+    background-color: #41415b;
+    color: white;
+}
+
+.social-media{
+    grid-area: social-media;
+}
+
+.tlf{
+    grid-area: tlf;
+    font-size: 100%;
+    text-align: center;
+}
+/* .social-media1{
+    
+
+} */
+
+.social-media1 svg{
+    grid-area: socialMedia1;
+    width: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+/* .social-media2{
+    grid-area: socialMedia2;
+} */
+
+.social-media2 svg{
+    grid-area: socialMedia2;
+    width: 15px;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+
+/* .social-media3{
+    grid-area: socialMedia3;
+} */
+
+.social-media3 svg{
+    grid-area: socialMedia3;
+    width: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+svg {
+    fill: #b78838;
+}
+
+.copyright{
+    grid-area: copyright;
+    font-size: 100%;
+    text-align: center;
+    
+}
+
+/* End footer*/
