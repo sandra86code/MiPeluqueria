@@ -1,11 +1,11 @@
 
-
+/* Benin central content */
  .all-sections{
     background-color: brown;
    display: grid;
    grid-area: content;
    gap: 10px;
-   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
    margin: 40px;
   }
 
@@ -21,79 +21,86 @@ table{
   text-align: center;
   margin: auto;
 }
+/* End central content */
+
 
 /* Begin footer */
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr  ;
-    grid-template-rows: repeat(3, 50px);
+    grid-template-rows: repeat(3, 55px);
     grid-area: footer;
     background-color: #41415b;
     grid-template-areas:
-    "social-media social-media social-media"
+    "social-media1 social-media2 social-media3"
     "tlf tlf tlf"
     "copyright copyright copyright";
     padding: 2%;
-    background-color: #41415b;
     color: white;
 }
 
-.social-media{
-    grid-area: social-media;
-}
 
 .tlf{
     grid-area: tlf;
-    font-size: 100%;
+    font-size: 30px;
     text-align: center;
 }
-/* .social-media1{
-    
 
-} */
-
-.social-media1 svg{
-    grid-area: socialMedia1;
-    width: 30px;
+.social-media1 {
+    grid-area: social-media1;
     display: block;
     margin: auto;
-    margin-top: 10%;
+
 }
 
-/* .social-media2{
-    grid-area: socialMedia2;
-} */
-
-.social-media2 svg{
-    grid-area: socialMedia2;
-    width: 15px;
+.social-media2 {
+    grid-area: social-media2;
+    width: 25px;
     display: block;
     margin: auto;
-    margin-top: 10%;
 }
 
-
-/* .social-media3{
-    grid-area: socialMedia3;
-} */
-
-.social-media3 svg{
-    grid-area: socialMedia3;
-    width: 20px;
+.social-media3 {
+    grid-area: social-media3;
+    width: 25px;
     display: block;
     margin: auto;
-    margin-top: 10%;
 }
 
 svg {
     fill: #b78838;
+    width: 30px;
 }
 
 .copyright{
     grid-area: copyright;
-    font-size: 100%;
+    font-size: 30px;
     text-align: center;
+    padding-bottom: 15px;
     
 }
+
+@media (min-width:800px){
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        grid-template-rows: repeat(4, 40px);
+        grid-area: footer;
+        background-color: #41415b;
+        grid-template-areas:
+        "social-media1 social-media2 social-media3"
+        "social-media1 social-media2 social-media3"
+        "tlf tlf tlf"
+        "copyright copyright copyright";
+        padding: 2%;
+        color: white;
+    }
+    svg {
+        fill: #b78838;
+        width: 40px;
+    }
+    
+}
+
 
 /* End footer*/
