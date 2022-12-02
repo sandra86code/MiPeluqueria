@@ -1,29 +1,4 @@
 
-/* Benin central content */
- .all-sections{
-    background-color: brown;
-   display: grid;
-   grid-area: content;
-   gap: 10px;
-   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-   margin: 40px;
-  }
-
-.all-sections > .section-table{
-  background-color: aquamarine;
-  border: 2px solid yellow;
-  height: 200px;
-}
-
-table{
-  width: 180px;
-  height: 190px;
-  text-align: center;
-  margin: auto;
-}
-/* End central content */
-
-
 /* Begin footer */
 footer{
     display: grid;
@@ -67,10 +42,6 @@ footer{
     margin: auto;
 }
 
-svg {
-    fill: #b78838;
-    width: 30px;
-}
 
 .copyright{
     grid-area: copyright;
@@ -78,6 +49,14 @@ svg {
     text-align: center;
     padding-bottom: 15px;
     
+}
+
+svg {
+    fill: #b78838;
+    width: 30px;
+}
+.fb {
+    width: 25px;
 }
 
 @media (min-width:800px){
@@ -94,11 +73,9 @@ svg {
         "copyright copyright copyright";
         padding: 2%;
         color: white;
+        width: auto;
     }
-    svg {
-        fill: #b78838;
-        width: 40px;
-    }
+
     
 }
 

@@ -1,0 +1,23 @@
+/* Benin central content */
+.all-sections{
+    background-color: brown;
+   display: grid;
+   grid-area: content;
+   gap: 10px;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   margin: 40px;
+  }
+
+.all-sections > .section-table{
+  background-color: aquamarine;
+  border: 2px solid yellow;
+  height: 200px;
+}
+
+table{
+  width: 180px;
+  height: 190px;
+  text-align: center;
+  margin: auto;
+}
+/* End central content */
